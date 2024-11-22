@@ -5,28 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Draggabilly</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/01.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="images/01.png" type="image/x-icon">
 </head>
 
 <body>
 
-  <section id="s1">
+  <section id="s2">
     <div class="carre draggable"></div>
     <div class="carre2 draggable"></div>
     <div class="carre3 draggable"></div>
+    <div class="carre4 draggable"></div>
+    <div class="apple draggable"></div>
+  </section>
+  
+  <section id="s1">
+      <div class="div3"> <img class="draggable" src="images/01.png"></div>
+      <div class="div2"> <img class="draggable" src="images/02.png" alt=""></div>
+      <div class="div25"> <img class="draggable" src="images/03.png" alt=""></div>
+      <div class="div21"> <img class="draggable" src="images/04.png" alt=""></div>
+      <div class="div1"> <img class="draggable" src="images/05.png" alt=""></div>
+      <div class="div22"> <img class="draggable" src="images/06.png" alt=""></div>
+      <div class="div4"> <img class="draggable" src="images/07.png" alt=""></div>
+      <div class="div15"> <img class="draggable" src="images/08.png" alt=""></div>
+      <div class="div5"> <img class="draggable" src="images/09.png" alt=""></div>
+      <div class="div20"> <img class="draggable" src="images/10.png" alt=""></div>
+      <h1 class="div13" class="draggable" class="animate__heartBeat">//WIP//</h1>
   </section>
 
-  <section id="s2">
-      <div class="div1"> <img class="draggable" src="images/01.svg"></div>
-      <div class="div2"> <img class="draggable" src="images/02.svg" alt=""></div>
-      <div class="div3"> <img class="draggable" src="images/03.svg" alt=""></div>
-      <div class="div4"> <img class="draggable" src="images/04.svg" alt=""></div>
-      <div class="div5"> <img class="draggable" src="images/05.svg" alt=""></div>
-      <div class="div6"> <img class="draggable" src="images/06.svg" alt=""></div>
-      <div class="div7"> <img class="draggable" src="images/07.svg" alt=""></div>
-      <div class="div8"> <img class="draggable" src="images/08.svg" alt=""></div>
-      <div class="div9"> <img class="draggable" src="images/09.svg" alt=""></div>
-  </section>
+
 
 </body>
 
@@ -35,11 +41,9 @@
 <script>
 var draggableElems = document.querySelectorAll('.draggable');
 var draggies = []
-// init Draggabillies
 for ( var i=0; i < draggableElems.length; i++ ) {
   var draggableElem = draggableElems[i];
   var draggie = new Draggabilly( draggableElem, {
-    // options...
   });
   draggies.push( draggie );
 }
